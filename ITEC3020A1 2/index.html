@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ITEC3020 Assignment 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	    body {
+			margin: 0;
+			font-family: Futura, sans-serif;
+			text-align: center;
+	    }
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="#">FREE SHIPPING ON ALL ORDERS</a>
+	</div>
+
+	<div class="second-navbar">
+	    <div class="logo">
+	        <img src="logo.png" alt="Logo" width="280" height="100">
+	    </div>
+	    <div class="search-bar">
+	        <input type="text" placeholder="Search...">
+	        <button type="submit"><img src="search.jpg" alt="Search" width="40" height="40"></button>
+	    </div>
+	    <div class="right-buttons">
+	        <a href="#"><img src="account.jpg" alt="Account" width="40" height="40"></a>
+	        <a href="#"><img src="cart.jpg" alt="Cart" width="40" height="40"></a>
+	    </div>
+	</div>
+
+	<div class="third-navbar">
+	    <a href="#">HOME</a>
+	    <a href="#">HEADPHONES</a>
+	    <a href="#">EARBUDS</a>
+	    <div class="dropdown">
+	        <button class="dropbtn">BRANDS</button>
+	        <div class="dropdown-content">
+	            <!-- Add your brand links here -->
+	            <a href="#">Apple</a>
+	            <a href="#">Beats by Dre</a>
+	            <a href="#">Bose</a>
+	            <a href="#">Sony</a>
+	        </div>
+	    </div>
+	</div>
+
+	<hr>
+
+	<div class="product-container">
+	        <div class="product-image">
+	            <img id="productImage" src="headphoneBlue.jpg" alt="Product Image" style="max-width: 60%;">
+	        </div>
+	        <div class="product-details">
+	            <div class="product-name">Beats Studio Pro – Premium Wireless Noise Cancelling Headphones</div>
+	            <div class="product-price">$469.99</div>
+            	<button class="add-to-cart-button">Add to Cart</button>
+
+	            <div class="product-description">
+					<p><b>OVERVIEW</b></p>
+	                <p>Beats Studio Pro wireless over-ear active noise cancelling headphones deliver premium sound and spatial audio with up to 40 hours of battery life.</p>
+					<p><b>ABOUT THIS PRODUCT</b></p>
+	                <ul>
+	                	<li>Beats’ custom acoustic platform delivers rich, immersive sound</li>
+	                	<li>Custom 40mm active driver enhances sound clarity and near-zero distortion even at high – an improvement of up to 80% compared to Beats Studio3 Wireless, providing increased audio fidelity</li>
+	                	<li>Integrated digital processor optimizes frequency responses for a powerful, balanced sound profile</li>
+	                	<li>Fully adaptive Active Noise Cancelling (ANC) keeps you immersed in the music</li>
+	                	<li>Transparency mode blends your listening experience with the world around you</li>
+	                	<li>Personalized Spatial Audio with dynamic head tracking for theater-like sound from your favorite content3</li>
+	            		<li>Music and movies available in Dolby Atmos deliver full immersion with 360-degree surround sound</li>
+	                </ul>
+	            </div>
+	            <div class="headphone-options">
+					<div style = "position:relative; left:-670px; top:-220px">
+	            	<div class="headphone-options-heading">Available colours:</div>
+                    <div class="headphone-option-images">
+                        <div>
+                            <img src="headphone.jpg" alt="headphone" onclick="changeProductImage('headphone.jpg')">
+                            <div class="headphone-option-title"><b>BLACK</b></div>
+                        </div>
+                        <div>
+                            <img src="headphoneBrown.jpg" alt="headphoneBrown" onclick="changeProductImage('headphoneBrown.jpg')">
+                            <div class="headphone-option-title"><b>BROWN</b></div>
+                        </div>
+                        <div>
+                            <img src="headphoneWhite.jpg" alt="headphoneWhite" onclick="changeProductImage('headphoneWhite.jpg')">
+                            <div class="headphone-option-title"><b>WHITE</b></div>
+                        </div>
+                        <div>
+                            <img src="headphoneBlue.jpg" alt="headphoneBlue" onclick="changeProductImage('headphoneBlue.jpg')">
+                            <div class="headphone-option-title"><b>BLUE</b></div>
+                        </div>
+					</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	
+
+	<div class="suggested-headphones">
+        <h2>YOU MAY ALSO LIKE</h2>
+
+        <div class="suggested-list">
+            <div class="suggested-item">
+                <img src="headphone1.jpg" alt="headphone1">
+                <p>Bose QuietComfort</p>
+                <p>$449.99</p>
+            </div>
+
+            <div class="suggested-item">
+                <img src="headphone2.jpg" alt="headphone2">
+                <p>Sennheiser HD 350BT</p>
+                <p>$99.97</p>
+            </div>
+
+            <div class="suggested-item">
+                <img src="headphone3.jpg" alt="headphone3">
+                <p>Sony WH-1000XM5</p>
+                <p>$449.99</p>
+            </div>
+
+            <div class="suggested-item">
+                <img src="headphone4.jpg" alt="headphone4">
+                <p>Apple AirPods Max</p>
+                <p>$779.99</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+		<p>&copy; 2024 Synthwave. All Rights Reserved.</p>
+    </footer>
+
+	<script>
+        function changeProductImage(imageSrc) {
+            var productImage = document.getElementById("productImage");
+            productImage.src = imageSrc;
+        }
+    </script>
+
+</body>
+</html>
